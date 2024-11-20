@@ -1,3 +1,4 @@
+
 data "aws_region" "current" {
   # Call this API only if create_vpc and enable_flow_log are true
   count = var.create_vpc && var.enable_flow_log ? 1 : 0
